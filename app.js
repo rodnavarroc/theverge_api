@@ -61,7 +61,7 @@ app.get('/theverge/tech', (req, res) => {
     })
 });
 
-const puerto = process.env.PUERTO || 5000;
+const puerto = process.env.PORT || 5000;
 app.listen(puerto, function () {
     console.log("Servidor iniciado en puerto:" + puerto);
 });
